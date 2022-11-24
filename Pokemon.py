@@ -107,13 +107,13 @@ class Pokemon:
             l.append(tup)
         return l
     
-"""
-def table_nom():
-    l = []
-    connexion = sq.connect('Pokemon.db')
-    table = list(connexion.execute("SELECT nom FROM pokemon"))
-    for tup in table:
-        if tup != :
+    def table_nom():
+        l = []
+        connexion = sq.connect('Pokemon.db')
+        table = list(connexion.execute("SELECT nom FROM pokemon WHERE not nom = 'Null'"))
+        for tup in table:
             l.append(tup)
-    return l
-"""         
+        return l
+        
+
+         
